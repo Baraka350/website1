@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Table Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Age</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>Software Engineer</td>
+                <td>28</td>
+                <td>IT</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Project Manager</td>
+                <td>35</td>
+                <td>Marketing</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>Data Scientist</td>
+                <td>32</td>
+                <td>Analytics</td>
+            </tr>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>HR Specialist</td>
+                <td>40</td>
+                <td>Human Resources</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

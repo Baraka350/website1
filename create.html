@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HTML?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>What is HTML?</h1>
+    </header>
+
+    <section class="content">
+        <h2>Definition of HTML</h2>
+        <p>HTML stands for Hypertext Markup Language. It is the standard language used to create and design web pages. HTML provides the structure for web content, including elements like headings, paragraphs, links, and images.</p>
+
+        <h2>Who Created HTML?</h2>
+        <p>HTML was created by <strong>Tim Berners-Lee</strong>, a British computer scientist, in <strong>1991</strong> while working at CERN (European Organization for Nuclear Research).</p>
+
+        <h2>HTML as a Markup Language</h2>
+        <p>HTML is a <strong>markup language</strong>, which means it uses tags to structure and format content. Unlike programming languages that are used to create logic or functionality, markup languages like HTML define the structure and presentation of data on a webpage.</p>
+
+        <h2>What is a Markup Language? (5 Key Points)</h2>
+        <ul>
+            <li>Markup languages are used to annotate or structure content on a page.</li>
+            <li>They use tags or symbols to define the structure and presentation of text and multimedia elements.</li>
+            <li>They are not programming languages and do not define logic or functionality.</li>
+            <li>Markup languages make it easy to represent data in a readable and formatted way on the web.</li>
+            <li>HTML, XML, and Markdown are examples of markup languages.</li>
+        </ul>
+
+        <h2>Basic Structure of HTML</h2>
+        <p>The basic structure of an HTML document includes the following essential elements:</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <h2>Attributes and Types of Tags</h2>
+        <p>HTML tags can have <strong>attributes</strong> that define specific properties or behaviors of the element. Attributes are placed inside the opening tag and are written as key-value pairs.</p>
+
+        <h3>Common Types of HTML Tags:</h3>
+        <ul>
+            <li><strong>Structural Tags</strong>: Used for defining the structure of the webpage.</li>
+            <li><strong>Text Formatting Tags</strong>: Used to format text on the page.</li>
+            <li><strong>Anchor Tags</strong>: Used for creating hyperlinks.</li>
+            <li><strong>Image Tags</strong>: Used for embedding images.</li>
+            <li><strong>List Tags</strong>: Used to create ordered or unordered lists.</li>
+            <li><strong>Table Tags</strong>: Used for creating tables.</li>
+            <li><strong>Form Tags</strong>: Used for collecting user input through forms.</li>
+            <li><strong>Meta Tags</strong>: Used for providing metadata about the webpage.</li>
+            <li><strong>Div and Span Tags</strong>: Used for grouping elements.</li>
+        </ul>
+
+        <h3>Examples of Attributes:</h3>
+        <p>Here are some common attributes used in HTML tags:</p>
+
+        <h4>1. Anchor Tag (`<a>`) - Creating a hyperlink</h4>
+        <pre>
+&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+        </pre>
+        <p><strong>Attributes:</strong> `href`, `target`</p>
+
+        <h4>2. Image Tag (`<img>`) - Embedding an image</h4>
+        <pre>
+&lt;img src="image.jpg" alt="Description of image" width="300" height="200"&gt;
+        </pre>
+        <p><strong>Attributes:</strong> `src`, `alt`, `width`, `height`</p>
+
+        <h4>3. List Tags (`<ul>`, `<ol>`, `<li>`) - Creating lists</h4>
+        <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+        <p><strong>Attributes:</strong> (No attributes are commonly used in the `<ul>` and `<ol>` tags, but `type` can be used in `<ol>` to define numbering style.)</p>
+
+        <h4>4. Table Tags (`<table>`, `<tr>`, `<th>`, `<td>`) - Creating a table</h4>
+        <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+        <p><strong>Attributes:</strong> `border` for defining the table's border (used in the `<table>` tag). For `<th>` and `<td>`, attributes like `colspan`, `rowspan` can be used to merge cells.</p>
+
+        <h4>5. Form Tag (`<form>`) - Creating a form</h4>
+        <pre>
+&lt;form action="/submit" method="POST"&gt;
+    Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
+        <p><strong>Attributes:</strong> `action`, `method`</p>
+        
+        <h3>Conclusion</h3>
+        <p>HTML is a powerful language used to structure and format content on the web. It relies heavily on tags to define different types of content, with a wide variety of attributes to provide additional functionality or presentation to those tags.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Baraka. All rights reserved.</p>
+    </footer>
+</body>
+</html>

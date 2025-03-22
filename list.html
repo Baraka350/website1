@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complete Form Example</h1>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <!-- Text Inputs -->
+        <div class="form-section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-section">
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="email-contact" name="contact" value="email" checked>
+            <label for="email-contact">Email</label><br>
+            <input type="radio" id="phone-contact" name="contact" value="phone">
+            <label for="phone-contact">Phone</label>
+        </div>
+
+        <!-- Checkbox Inputs -->
+        <div class="form-section">
+            <label>Choose Your Interests:</label>
+            <input type="checkbox" id="music" name="interest" value="music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="sports" name="interest" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="technology" name="interest" value="technology">
+            <label for="technology">Technology</label>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="form-section">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <!-- File Upload -->
+        <div class="form-section">
+            <label for="file">Upload Your File:</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+
+        <!-- Date Picker -->
+        <div class="form-section">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-section">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
